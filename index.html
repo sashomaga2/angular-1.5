@@ -19,11 +19,18 @@
   </head>
   <body>
     <h1></h1>
-    <div class="container">
-      <movie-list></movie-list>
+    <div class="container-fluid">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="#/list">list</a></li>
+        <li><a href="#/about">about</a></li>
+      </ul>
+      <div class="container">
+        <ng-view></ng-view>
+      </div>
     </div>
     
     <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
     <script src="app.js"></script>
     <script src="movie-list.component.js"></script>
     <script src="movie-rating.component.js"></script>
