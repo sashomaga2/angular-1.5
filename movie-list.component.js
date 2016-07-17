@@ -35,13 +35,22 @@
 				movie.rating -= 1;	
 			}
 		}
+
+		vm.goTo = function(id) {
+			console.log('goto', id);
+			vm.$router.navigate(['Details', {id:id}]);
+		}
 	} 
 
 	module.component('movieList', {
 		templateUrl: 'movie-list.component.html',
 		// controller as sintax
 		controllerAs: 'vm',
-		controller: ['$http', controller]
+		controller: ['$http', controller],
+		bindings: {
+			// in case of nested routes will give router for comp
+			$router: '<'
+		}
 	});
 
 
