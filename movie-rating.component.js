@@ -6,7 +6,7 @@
 	module.component('movieRating', {
 		templateUrl: 'movie-rating.component.html',
 		bindings: {
-			value: '<'
+			value: '<' // '=' for 2way bind, @ for string & for callback
 		},
 		transclude: true,
 		controller: function() {

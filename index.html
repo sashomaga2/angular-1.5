@@ -17,23 +17,19 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body ng-cloak>
     <h1></h1>
-    <div class="container-fluid">
-      <ul class="nav navbar-nav navbar-left">
-        <li><a href="#/list">list</a></li>
-        <li><a href="#/about">about</a></li>
-      </ul>
-      <div class="container">
-        <ng-view></ng-view>
-      </div>
-    </div>
+    <movie-app>
+    </movie-app>
     
     <script src="node_modules/angular/angular.js"></script>
-    <script src="node_modules/angular-route/angular-route.js"></script>
+    <!-- <script src="node_modules/angular-route/angular-route.js"></script> -->
+    <!-- Angular2 component router version for 1.5 -->
+    <script src="node_modules/@angular/router/angular1/angular_1_router.js"></script>
     <script src="app.js"></script>
     <script src="movie-list.component.js"></script>
     <script src="movie-rating.component.js"></script>
+    <script src="movie-app.component.js"></script>
     
   </body>
 </html>
