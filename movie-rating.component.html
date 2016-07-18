@@ -1,6 +1,4 @@
-<span ng-repeat="entrie in $ctrl.entries track by $index">
-	<ng-transclude>
-		*
-	</ng-transclude>
+<span ng-repeat="entrie in $ctrl.entries track by $index" class="glyphicon {{entrie}}" ng-click="setRating({ value: $index + 1 })">
+	<!--<ng-translude>*</ng-translude>-->
 </span>
 	
