@@ -1,1 +1,12 @@
-<div> Details for: {{ vm.id }} </div>
+<div class="row">
+    <div> Details for: {{ vm.id }} </div>
+
+    <ul>
+        <li><a ng-link="['Overview']">Overview</a></li>
+        <li><a ng-link="['Cast']">Cast</a></li>
+        <li><a ng-link="['Director']">Director</a></li>
+    </ul>
+</div>
+<div class="row">
+    <ng-outlet></ng-outlet>
+</div>

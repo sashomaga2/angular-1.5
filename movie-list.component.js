@@ -38,7 +38,7 @@
 
 		vm.goTo = function(id) {
 			console.log('goto', id);
-			vm.$router.navigate(['Details', {id:id}]);
+			vm.$router.navigate(['Details', {id:id}, 'Overview']);
 		}
 	} 
 
