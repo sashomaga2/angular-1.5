@@ -1,0 +1,8 @@
+
+accordeon .ng-leave {
+    animation: fadeIn 0.5s;
+}
+
+accordeon .ng-enter {
+    animation: fadeOut 0.5s;
+}

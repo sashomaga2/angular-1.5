@@ -1,4 +1,4 @@
-var module = angular.module('myApp', ['ngComponentRouter']);
+var module = angular.module('myApp', ['ngComponentRouter', 'ngAnimate']);
 
 /* way to use ngRoute with components */
 // module.config(function($routeProvider){
